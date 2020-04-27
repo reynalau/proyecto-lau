@@ -1,3 +1,79 @@
+/* Tipografía */
+/*@font-face {font-family: "";src: url("") format("woff2");font-style:normal;font-weight:400;}*/
+/****************************************
+*    Variables
+*****************************************/
+:root {
+  /* Colors */
+  --white: #ebebeb;
+  --black: #000000;
+  --link: #0000ee;
+  --hover: #551a8b;
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+}
+
+/****************************************
+*    Base
+*****************************************/
 body {
-  font-family: sans-serif;
+  color: var(--black);
+  background: var(--white);
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: var(--hover);
+  text-decoration: none;
+}
+
+/****************************************
+*    Componentes - Common
+*****************************************/
+/* navegación */
+.nav {
+  display: flex;
+  width: 100%;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.menu li {
+  padding-right: 3rem;
+}
+
+.menu li:last-child {
+  padding-right: 0;
+}
+
+.logo {
+  border-radius: 50px;
+}
+
+/* container */
+
+.container {
+  width: 100%;
+  max-width: 85vw;
+  margin: 0 auto;
+}
+/****************************************
+*    Helpers
+*****************************************/
+/* Ayuda visual temporal */
+.outline {
+  border: 2px dotted blue;
 }
