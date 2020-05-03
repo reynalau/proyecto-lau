@@ -99,6 +99,11 @@ div {
   grid-template-rows: repeat(5, 120px);
   gap: 30px;
   height: 70vh;
+  margin: 5vh auto;
+}
+
+.main div {
+  border-radius: 15px;
 }
 
 .main div:nth-child(1) {
@@ -141,6 +146,34 @@ div {
   /* margin-top: -33px; */
 }
 
+.main h2 {
+  padding: 3rem 1rem;
+  font-size: 2rem;
+}
+
+.card {
+  border: 3px solid hotpink;
+  position: relative;
+}
+
+.button {
+  border-radius: 8px;
+  border-color: lightskyblue;
+  background-color: lightskyblue;
+  color: white;
+  font-weight: bold;
+  margin: 4rem 1rem 0;
+}
+
+.card.card-vertical .button {
+  margin: 10.5rem 1rem 0;
+}
+
+.card p {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
 /****************************************
 *    Helpers
 *****************************************/
