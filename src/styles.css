@@ -1,24 +1,12 @@
-/* Tipografía */
-/*
-@font-face {
-  font-family: 'my-font';
-  src: url('myfont.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 400;
-}*/
 /****************************************
 *    Variables
 *****************************************/
 :root {
-  /* Colors */
   --white: #ebebeb;
   --black: #000000;
   --link: #0000ee;
   --hover: #551a8b;
-  /* Typography */
-  --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
-    Arial, sans-serif;
+  --font-family: "Open Sans", sans-serif;
 }
 
 /****************************************
@@ -28,6 +16,10 @@ body {
   color: var(--black);
   background: var(--white);
   font-family: var(--font-family);
+  font-style: normal;
+  font-size: 100%;
+  font-weight: 400;
+  font-size: calc(16px + (20 - 16) * ((100vw - 640px) / (1400 - 640)));
 }
 
 a {
@@ -39,6 +31,44 @@ a:hover,
 a:active {
   color: var(--hover);
   text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+button {
+  border-radius: 8px;
+  border-color: lightskyblue;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  order: 3;
+  max-width: 190px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-out;
+}
+
+button:hover {
+  background-color: lightseagreen;
+  border: transparent;
 }
 
 div {
@@ -54,7 +84,7 @@ div {
   display: flex;
   width: 100%;
   width: 85vw;
-  margin: 0 auto;
+  margin: 5vh auto 0;
 }
 
 .menu {
@@ -64,7 +94,7 @@ div {
 }
 
 .menu li {
-  padding-right: 3rem;
+  padding-right: 3em;
 }
 
 .menu li:last-child {
@@ -84,21 +114,29 @@ div {
 }
 
 /* header */
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 5vh auto;
+}
+
 .header h1 {
-  padding: 2rem 0 0;
+  padding: 1em 0 0;
 }
 
 .header p {
-  padding: 0.5rem 0 0;
+  padding: 0.5em 0 0;
 }
 
 /* main */
 .main {
   display: grid;
-  grid-template-columns: repeat(4, 280px);
+  grid-template-columns: repeat(autofill, minmax(280px, 300px));
   grid-template-rows: repeat(5, 120px);
   gap: 30px;
   height: 70vh;
+  width: 100%;
+  max-width: 1400px;
   margin: 5vh auto;
 }
 
@@ -142,42 +180,36 @@ div {
   grid-row: 4 / 6;
   background-image: url(../assets/images/06.png);
   background-size: cover;
-
-  /* margin-top: -33px; */
-}
-
-.main h2 {
-  padding: 3rem 1rem;
-  font-size: 2rem;
 }
 
 .card {
   border: 3px solid hotpink;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.button {
-  border-radius: 8px;
-  border-color: lightskyblue;
-  background-color: lightskyblue;
-  color: white;
-  font-weight: bold;
-  margin: 4rem 1rem 0;
+.card h2 {
+  order: 2;
+  padding-left: 0.5em;
+  margin-top: -2.5em;
+  max-width: 90%;
 }
 
-.card.card-vertical .button {
-  margin: 10.5rem 1rem 0;
+[data-card="vertical"] h2 {
+  margin-top: -6em;
+  border: none;
 }
 
 .card p {
-  position: absolute;
-  top: 1.5rem;
-  left: 1rem;
+  font-size: 0.8em;
+  order: 1;
+  padding: 1.2em 0 0 1em;
 }
 /****************************************
 *    Helpers
 *****************************************/
 /* Ayuda visual temporal */
 .outline {
-  border: 2px dotted blue;
+  outline: 2px dotted orchid;
 }
