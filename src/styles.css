@@ -6,6 +6,7 @@
   --black: #000000;
   --link: #0000ee;
   --hover: #551a8b;
+  --flamingo: #ff69b4;
   --font-family: "Open Sans", sans-serif;
 }
 
@@ -200,7 +201,7 @@ div {
 
 .card {
   position: relative;
-  border: 3px solid hotpink;
+  border: 3px solid var(--flamingo);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -284,6 +285,55 @@ div {
     border: none;
   }
 }
+
+/* Post */
+.post > * {
+  margin-top: 1.2em;
+}
+
+.social {
+  margin-top: 4em;
+  position: relative;
+}
+
+.social ul::before {
+  content: attr(aria-label);
+  transform: translate(0, -2em);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--flamingo);
+  position: absolute;
+}
+
+.social ul {
+  display: flex;
+}
+
+.social li {
+  flex: 1;
+}
+
+/* Desktop */
+@media screen and (min-width: 40em) {
+  .post h2 {
+  }
+
+  .post img {
+  }
+
+  .post time {
+  }
+
+  .post p {
+  }
+
+  .social ul {
+  }
+
+  .social li {
+  }
+}
+
 /****************************************
 *    Helpers
 *****************************************/
