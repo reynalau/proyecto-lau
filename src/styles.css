@@ -311,6 +311,26 @@ div {
 
 .social li {
   flex: 1;
+  display: flex;
+  justify-content: space-around;
+  background: #c94949;
+  border-radius: 3px;
+  padding: 10px 22px;
+  max-width: 150px;
+  margin: 10px auto 0 0;
+}
+
+.social li:first-child::before {
+  content: url(../assets/images/icon-fb.svg);
+  transform: translateY(2px);
+}
+.social li:last-child::before {
+  content: url(../assets/images/icon-linkedin.svg);
+}
+
+.social li a {
+  align-self: center;
+  color: white;
 }
 
 /* Desktop */
