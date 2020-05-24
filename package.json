@@ -1,7 +1,7 @@
 {
   "name": "proyecto-lau",
   "version": "1.0.0",
-  "description": "Proyecto de aprendizaje",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",

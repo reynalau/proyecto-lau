@@ -74,6 +74,13 @@ div {
   padding: 0;
 }
 
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+  width: 100%;
+  overflow: hidden;
+}
+
 /****************************************
 *    Componentes - Common
 *****************************************/
@@ -331,6 +338,33 @@ div {
 .social li a {
   align-self: center;
   color: white;
+}
+
+fieldset {
+  margin: 0 auto;
+  border: none;
+}
+
+.form-container {
+  margin: 1.5em 0 0;
+  padding: 1.5em;
+  outline: 3px solid var(--flamingo);
+}
+
+.form-container h3 {
+  text-align: center;
+}
+
+.form-container p {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.form-container label {
+  display: none;
+}
+
+input::placeholder {
 }
 
 /* Desktop */
