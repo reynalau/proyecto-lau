@@ -341,13 +341,24 @@ input[type="email"] {
 }
 
 fieldset {
-  margin: 0 auto;
   border: none;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-container > * {
+  flex: 1;
+}
+
 .form-container {
-  margin: 1.5em 0 0;
-  padding: 1.5em;
+  margin: 2.5em auto;
+  padding: 1.5em 0;
+  max-width: 85%;
   outline: 3px solid var(--flamingo);
 }
 
@@ -360,11 +371,8 @@ fieldset {
   text-align: center;
 }
 
-.form-container label {
-  display: none;
-}
-
-input::placeholder {
+.form-container input[type="email"] {
+  margin: 1em 0;
 }
 
 /* Desktop */
@@ -385,6 +393,37 @@ input::placeholder {
   }
 
   .social li {
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .input-container > * {
+    flex: 1;
+  }
+
+  .form-container {
+    margin: 2.5em auto;
+    padding: 1.5em 0;
+    max-width: 85%;
+    outline: 3px solid var(--flamingo);
+  }
+
+  .form-container h3 {
+    text-align: center;
+  }
+
+  .form-container p {
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  .form-container input[type="email"] {
+    margin: 0 1em;
   }
 }
 
