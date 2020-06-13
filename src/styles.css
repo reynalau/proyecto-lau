@@ -24,6 +24,7 @@ body {
 }
 
 a {
+  color: var(--link);
   text-decoration: none;
   cursor: pointer;
 }
@@ -395,6 +396,38 @@ fieldset {
   margin-top: 1em;
 }
 
+.footer {
+  background-color: rgb(88, 87, 87);
+  margin: 2.5em 0 0;
+  padding: 2em;
+  color: #fff;
+}
+
+.footer img {
+  margin-top: 1.2em;
+}
+
+.footer p {
+  padding-top: 1.5em;
+}
+
+.footer h3 {
+  padding: 1.2em 0 0.5em;
+  color: #b5eafa;
+}
+
+.footer li {
+  line-height: 1.6;
+}
+
+.footer li a {
+  color: white;
+}
+
+.footer li a:hover {
+  color: var(--hover);
+}
+
 /* Desktop */
 @media screen and (min-width: 40em) {
   .container {
@@ -442,7 +475,7 @@ fieldset {
   }
 
   .form-container {
-    margin: 2.5em auto;
+    margin: 3.5em 0 2.5em;
     padding: 1.5em 0;
     max-width: 85%;
     outline: 3px solid var(--flamingo);
