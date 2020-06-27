@@ -494,6 +494,10 @@ fieldset {
     margin: 0 1em;
   }
 
+  .home-form.form-container {
+    margin: 200px auto 0;
+  }
+
   .related-posts {
     margin: 0;
   }

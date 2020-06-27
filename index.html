@@ -14,9 +14,11 @@
     />
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
-  <body>
+  <body class="home">
     <nav class="nav">
-      <img class="logo" src="./assets/images/logo.jpg" alt="Logo Lau Reyna" />
+      <a href="/">
+        <img class="logo" src="./assets/images/logo.jpg" alt="Logo Lau Reyna" />
+      </a>
       <ul class="menu">
         <li><a href="/">link</a></li>
         <li><a href="/">link</a></li>
@@ -33,9 +35,11 @@
         <div class="card">
           <h2>Mujeres en la NBA</h2>
           <p>igualdad</p>
-          <button class="button">
-            Informes aquí>
-          </button>
+          <a href="/post.html">
+            <button class="button">
+              Informes aquí >
+            </button>
+          </a>
         </div>
         <div class="card" vertical>
           <h2>Mujeres coach en la NBA</h2>
@@ -73,6 +77,77 @@
           </button>
         </div>
       </main>
+      <div class="home-form form-container">
+        <h3>Mantente actualizado</h3>
+        <p>Registrate y recibe en tu correo lo más nuevo de marketing</p>
+        <form action="post">
+          <fieldset>
+            <div class="input-container">
+              <input type="text" placeholder="Tu nombre" />
+              <input type="email" placeholder="Tu correo" />
+              <input type="button" value="¡Quiero suscribirme!" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <img src="./assets/images/logo.jpg" alt="Logo Lau Reyna" />
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div>
+          <ul>
+            <h3>Categorías</h3>
+            <li>
+              <a href="#">
+                Ecommerce
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                App marketing
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Lead gen
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sales Enablement
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h3>Navigate</h3>
+            <li>
+              <a href="#">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Servicios
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Test de algo
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Escríbeme
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
